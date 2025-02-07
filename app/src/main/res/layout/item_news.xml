@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_background"
+    android:layout_margin="@dimen/_4dp"
+    android:padding="@dimen/_8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_80dp"
+        android:layout_height="@dimen/_80dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16dp" />
+
+</LinearLayout>

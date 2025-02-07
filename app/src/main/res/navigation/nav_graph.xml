@@ -1,0 +1,113 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsFragment">
+
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.awesome.news_app.ui.view.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_newsFragment_to_articleFragment"
+            app:destination="@id/articleFragment">
+            <argument
+                android:name="title"
+                app:argType="string" />
+            <argument
+                android:name="description"
+                app:argType="string" />
+            <argument
+                android:name="author"
+                app:argType="string" />
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="content"
+                app:argType="string" />
+            <argument
+                android:name="whichfrag"
+                app:argType="string" />
+            <argument
+                android:name="sourcename"
+                app:argType="string" />
+            <argument
+                android:name="publishedAt"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- Saved Fragment -->
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.awesome.news_app.ui.view.SavedFragment"
+        android:label="Saved"
+        tools:layout="@layout/fragment_saved">
+        <action
+            android:id="@+id/action_savedFragment_to_articleFragment"
+            app:destination="@id/articleFragment">
+            <argument
+                android:name="title"
+                app:argType="string" />
+            <argument
+                android:name="description"
+                app:argType="string" />
+            <argument
+                android:name="author"
+                app:argType="string" />
+            <argument
+                android:name="imageUrl"
+                app:argType="string" />
+            <argument
+                android:name="content"
+                app:argType="string" />
+            <argument
+                android:name="whichfrag"
+                app:argType="string" />
+            <argument
+                android:name="sourcename"
+                app:argType="string" />
+            <argument
+                android:name="publishedAt"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- Article Fragment -->
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.awesome.news_app.ui.view.ArticleFragment"
+        android:label="ArticleFragment"
+        tools:layout="@layout/fragment_article">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="author"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="content"
+            app:argType="string" />
+        <argument
+            android:name="whichfrag"
+            app:argType="string" />
+        <argument
+            android:name="sourcename"
+            app:argType="string" />
+        <argument
+            android:name="publishedAt"
+            app:argType="string" />
+
+
+    </fragment>
+
+</navigation>
